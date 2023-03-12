@@ -5,6 +5,8 @@
 
 .container {
   text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
 }
 
 .container div {
@@ -17,6 +19,7 @@
 
 .header {
   background-color: #393f4d;
+  grid-column: 1 / -1;
 }
 
 .menu ul,
@@ -88,4 +91,27 @@
 .footer p {
   font-size: 13px;
   font-weight: normal;  
+}
+/* New Declarations below this line */
+.header {
+  display: grid;
+  grid-template-columns: 300px 1fr minmax(450px, 65%);
+}
+
+.logo {
+  place-self: center;
+}
+
+.menu {
+  grid-column: 3;
+  align-self: center;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+li {
+  list-style: none;
 }
