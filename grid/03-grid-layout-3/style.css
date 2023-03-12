@@ -119,6 +119,14 @@ li {
 
 .sidebar {
   grid-area: 2 / 1 / 4 / 2;
+  display: grid;
+  gap: 50px;
+  grid-auto-rows: 1fr;
+}
+
+.side-content {
+  display: grid;
+  place-items: center;
 }
 
 .footer {
