@@ -96,7 +96,7 @@
 /* New Declarations below this line */
 .header {
   display: grid;
-  grid-template-columns: 300px 1fr minmax(450px, 65%);
+  grid-template-columns: 300px 1fr minmax(320px, 65%);
 }
 
 .logo {
@@ -110,11 +110,13 @@
 
 ul {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  /*grid-template-columns: repeat(4, 1fr);*/
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
 }
 
 li {
   list-style: none;
+  padding: 1rem 0;
 }
 
 .sidebar {
